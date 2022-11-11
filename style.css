@@ -1,0 +1,244 @@
+
+body{
+    margin: 0;
+}
+p, h1, h2, h3, h4, figcaption, label, td, th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1, h2{
+    color: #464c63;
+}
+p {
+    color: #464c63;
+}
+.divisoria-setor{
+    display: block;
+    background-color:#464c63;
+    padding-bottom: 5px;
+    border-radius: 10px 10px 0 0;
+}
+.cargo-equipe{
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+.imagem-chamada-equipe{
+    height: 100px;
+    transition: 0.25s;
+}
+.imagem-chamada-equipe:hover{
+    height: 120px;
+}
+.imagem-chamada-servicos{
+    width: 100px;
+    border-radius: 15px;
+    margin: 5px;
+    transition: 0.25s;
+}
+.imagem-chamada-servicos:hover{
+    width: 150px;
+    background-color: rgb(167,207,232, 0.15);
+}
+.label-formulario-contato{
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    padding: 0 10px;
+}
+.input-formulario-contato{
+    width: 100%;
+    height: 30px;
+    border: 2px solid rgb(167,207,232, 0.4);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.botao{
+    width: 8rem;
+    height: 2rem;
+    background-color: #6a749e;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 2px 2px 3px 1px #464c63;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.botao:hover{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #464c63;
+    box-shadow: 2px 2px 3px 1px #6a749e;
+}
+#container-cabecalho-principal{
+    width: 100%;
+    background-color: #6a749e;
+    display: flex;
+    overflow: hidden;
+    border-bottom: 15px solid #464c63;
+}
+#container-logo-principal{
+    padding: 20px;
+    background-color: white;
+    margin: 0 20% 20px auto;
+    display: grid;
+    height: 110px;
+    overflow: hidden;
+}
+#container-logo-principal:hover{
+    height: 280px;
+    transition: 1.5s;
+}
+#logo-principal-fundo{
+    width: 200px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+}
+#logo-principal-topo{
+    width: 200px;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 2;
+    margin: 63px auto auto auto;
+    padding: 0 0 100px 0;
+    background-color: white;
+}
+#container-logo-principal:hover #logo-principal-topo{
+    margin: auto auto 0 auto;
+    padding: 0 0 0 0;
+    transition: 3s;
+}
+
+#container-campo-destaque{
+    margin-top: -100px;
+    margin-left: 70px;
+    display: flex;
+    padding-bottom: 100px;
+}
+#imagem-destaque{
+    max-width: 500px;
+}
+#texto-destaque{
+    margin: 150px 10% 0 10%;
+    align-self: center;
+    text-align: center;
+}
+#container-campo-chamada-destaque{
+    display: flex;
+    background-color: rgb(167,207,232, 0.15);
+}
+#container-texto-campo-chamada-destaque{
+    display: block;
+    margin: 100px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 8px 1px;
+
+}
+#texto-cabecalho-chamada-destaque{
+    text-align: center;
+}
+#container-imagem-chamada-destaque{
+    padding: 15px;
+    display: grid;
+}
+#imagem-chamada-destaque{
+    height: 320px;
+    margin-right: 100px;
+    margin-top: 150px;
+    transition: 2s;
+}
+#imagem-chamada-destaque{
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    transition: 2s;
+}
+#imagem-chamada-destaque-escondida{
+    opacity: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -1;
+    transition: 2s;
+}
+#container-imagem-chamada-destaque:hover #imagem-chamada-destaque-escondida{
+    opacity: 1;
+}
+#container-imagem-chamada-destaque:hover #imagem-chamada-destaque{
+    opacity: 0;
+}
+#container-campo-chamada-servicos{
+    display: block;
+}
+#container-texto-campo-chamada-servicos{
+    text-align: center;
+    margin: 100px 20%;
+}
+#container-imagem-chamada-servicos{
+    text-align: center;
+}
+#container-campo-chamada-equipe{
+    display: flex;
+    background-color: rgb(167,207,232, 0.15);
+    padding-bottom: 40px;
+    padding: 0 30px 40px 30px;
+}
+#container-texto-campo-chamada-equipe{
+    text-align: left;
+    margin: 80px 20px;
+}
+#container-imagem-chamada-equipe{
+    text-align: center;
+}
+#container-imagem-campo-chamada-equipe{
+    align-self: end;
+}
+#container-imagem-campo-chamada-equipe td{
+    padding: 5px;
+    background-color: #6a749e;
+    border: 1px solid #464c63;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px rgb(167,207,232, 0.45);
+    text-align: center;
+    color: white;
+    vertical-align: top;
+}
+#container-campo-formulario-contato{
+    display: flex;
+    margin: 30px;
+    margin: 80px 0;
+}
+#container-texto-campo-chamada-formulario-contato{
+    text-align: right;
+    margin: 0 30px;
+    width: 50%;
+}
+#container-formulario-campo-contato{
+    margin: 0 30px;
+    width: 50%;
+}
+#tabela-formulario-contato{
+    width: 100%;
+    background-color: rgb(70, 76, 99, 0.6);
+    padding: 10px 30px 10px 10px;
+    box-shadow: 5px 5px 15px 1px #464c63;
+    border-radius: 8px;
+}
+#tabela-formulario-contato th{
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+#tabela-formulario-contato td{
+    padding: 5px;
+}
+#tabela-formulario-contato #container-btn-submit-formulario-contato{
+    padding: 15px 0 20px 0;
+    text-align: end;
+}
+#rodape{
+    padding-bottom: 200px;
+    background-color: #464c63;
+}
